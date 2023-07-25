@@ -1,0 +1,313 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&family=Roboto&display=swap');
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background: #f9fbfb;
+    font-family: 'Roboto', sans-serif;
+}
+
+.flex {
+    display: flex;
+}
+
+/* Navbar styling starts here */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem;
+    background: #f9fbfb;
+}
+
+.btn {
+    background: transparent;
+    border: none;
+    padding: 0.25rem 1rem;
+    display: flex;
+    align-items: center;
+    border-radius: 5rem;
+    cursor: pointer;
+}
+
+.navbar .navbar-home-btn:hover {
+    background: #edf2fa;
+}
+
+.navbar .navbar-share-btn,
+.navbar .navbar-share-btn:active {
+    background: #c2e7ff;
+}
+
+.navbar .navbar-share-btn:hover {
+    background: #a0d8fd;
+}
+
+.navbar .navbar-share-btn span {
+    padding: 0.5rem;
+}
+
+.navbar input {
+    background: transparent;
+    border: none;
+    padding: 0.3rem;
+    color: #000;
+    border: 0.2px solid transparent;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+}
+
+.navbar input:hover,
+.navbar input:active,
+.navbar input:focus {
+    border-color: #000;
+}
+
+.left {
+    display: flex;
+    align-items: center;
+    color: #5f6368;
+}
+
+.left h2 {
+    font-weight: lighter;
+}
+
+.left .modify-text {
+    color: #80868b;
+    font-size: 12px;
+    overflow: hidden;
+    display: flex;
+    gap: 4px;
+    padding-left: 6px;
+
+}
+
+.right {
+    display: flex;
+    gap: 0.5rem;
+}
+
+/* Navbar styling ends here */
+
+/* Home Styling Starts Here */
+.home {
+    border-top: 1px solid #c7c7c7;
+}
+
+.header {
+    max-width: 1000px;
+    padding: 1rem;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+}
+
+.home .btn {
+    background: #fff;
+    padding: 0.5rem 1rem;
+    border: 1px solid #c7c7c7;
+    font-weight: 500;
+    color: #414549;
+    font-size: 16px;
+    overflow: hidden;
+    gap: 6px;
+}
+
+.home .btn svg {
+    color: #c7c7c7;
+}
+
+.home .btn:hover {
+    border: 1px solid #30a8f8;
+}
+
+/* Home Styling Ends Here */
+
+/* Card Styling Starts Here */
+.card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    max-width: 1200px;
+    padding: 2rem 0;
+    margin: auto;
+}
+
+.card {
+    height: 260px;
+    width: 210px;
+    background: #fff;
+    border: 1px solid #dfe1e5;
+    border-radius: 3px;
+    cursor: pointer;
+    position: relative;
+}
+
+.card:hover {
+    border-color: #30a8f8;
+}
+
+.card .img {
+    height: 180px;
+    border-bottom: 1px solid #c7c7c7;
+}
+
+.card .text {
+    padding: 0.6rem 1rem;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    overflow: hidden;
+}
+
+.card .text .time {
+    color: #80868b;
+    font-size: 12px;
+    line-height: 24px;
+    overflow: hidden;
+    display: flex;
+    gap: 4px;
+}
+
+.card .text .title {
+    color: #414549;
+    font-size: 16px;
+    font-weight: 500;
+    overflow: hidden;
+    padding-bottom: 8px;
+}
+
+.card .more-icon {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 6px;
+    margin: 0.5rem;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #8b959e;
+}
+
+.card .more-icon:hover {
+    background: rgb(232, 235, 237);
+    color: #80868b;
+    border-radius: 100%;
+}
+
+
+/* Card Styling Ends Here */
+
+/* Text Editor Styling Starts here */
+
+.main-container .ql-toolbar.ql-snow {
+    border: none;
+    border-bottom: 1px solid #c7c7c7;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background: #f9fbfb;
+}
+
+.main-container .ql-editor {
+    min-height: 11in;
+    width: 8.5in;
+    padding: 1in;
+    margin: 1rem;
+    background: #fff;
+    border: 1px solid #c7c7c7;
+}
+
+.main-container .ql-container {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+}
+
+@page {
+    margin: 1in;
+}
+
+@media print {
+    * {
+        border: none;
+        box-shadow: none;
+        inset: none;
+    }
+
+    body {
+        background: none;
+    }
+
+    .main-container .ql-toolbar.ql-snow {
+        display: none;
+    }
+
+    .main-container .ql-editor {
+        border: none;
+        width: 6.5in;
+        height: 9in;
+        padding: 0;
+        margin: 0;
+    }
+}
+
+/* Text Editor Styling Ends Here */
+
+/* Error Page Stying Starts Here */
+.error {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    align-items: center;
+    justify-content: center;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.error a {
+    text-decoration: none;
+}
+
+.error .btn {
+    display: block;
+    margin: 35px auto;
+    padding: 15px 30px;
+    background: #ff8e14;
+    color: white;
+    font-family: arial;
+    letter-spacing: 5px;
+    border-radius: 0.4rem;
+}
+
+.error h1 {
+    color: black;
+    font-family: arial;
+    font-weight: bold;
+    font-size: 50px;
+    letter-spacing: 5px;
+    line-height: 1rem;
+}
+
+/* Error Page Stying Ends Here */
+
+.grayText{
+    color: #80868b;
+}
