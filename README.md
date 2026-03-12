@@ -10,11 +10,6 @@
     <img src="https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white" alt="MongoDB" />
     <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white" alt="Node.js" />
   </p>
-
-  <br/>
-  <a href="https://docify.vercel.app" target="_blank">
-    <img src="https://img.shields.io/badge/Live_Demo-docify.vercel.app-FF5722?style=for-the-badge&logo=vercel&logoColor=white" alt="Live Demo" />
-  </a>
 </div>
 
 ---
@@ -137,19 +132,3 @@ Open → http://localhost:5173
 - Built as a full-stack real-time collaboration project
 - Quill.js for the rich text editor
 - Socket.io for live multi-user editing
-
----
-
-## 📄 License
-
-Open source under the **MIT License**.
-
----
-
-<div align="center">
-  <p>Real-time docs made simple • Powered by React & Socket.io</p>
-  <p>
-    <a href="https://docify.vercel.app">Live Demo</a> • 
-    <a href="https://github.com/saikiranpatil/docify/issues">Report Bug</a>
-  </p>
-</div>
